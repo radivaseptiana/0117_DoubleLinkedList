@@ -50,6 +50,21 @@ class DoubleLinkedList
         //Step 5: START.prev = newNode (if START exists)
         if (START != NULL)
             START->prev = newNode;
+
+        //Step 6: newNode.prev = NULL
+        newNode->prev = NULL;
+
+        //Step 7: START = newNode
+        START = newNode;
+        return;
+        }
+
+        // insert in the between node
+        // Step 8: Locate position for insertion
+        Node *current = START;
+        while (current->next != NULL && current->next->noMhs <nim)
+        {
+            
         }
     }
 }
